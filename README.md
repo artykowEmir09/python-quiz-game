@@ -25,3 +25,36 @@ Conditional Statements
 User Input
 Git
 GitHub
+
+
+🔮 Future Improvements
+
+Planned improvements may include:
+
+Add a graphical user interface (GUI)
+
+Store student data in a file
+
+Add database support
+
+Add student grades and GPA
+
+Add login/authentication
+
+Improve input validation
+
+Add object-oriented programming (OOP)
+
+Create a web-based version
+
+👨‍💻 Author
+
+Emir Artykov
+
+Software Engineering Student
+
+GitHub: @artykowEmir09
+
+📄 License
+
+This project is created for educational and learning purposes.
