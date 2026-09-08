@@ -1,4 +1,4 @@
-def show_balance():
+def show_balance(balance):
     print (f"Your balance is ${balance:.2f}")
 def deposit():
     amount = float(input("Enter the amount to be deposited: "))
@@ -7,7 +7,7 @@ def deposit():
         return 0
     else:
         return amount
-def withdraw():
+def withdraw(balance):
     amount = float(input ("Enter amount to be withdrown: "))
     if amount >  balance:
         print("Insufficient funds")
@@ -17,27 +17,29 @@ def withdraw():
         return 0
     else:
         return amount
+def main():
+    balance = 0 
+    is_running = True
+    while is_running:
+        print("==========BANKING PROGRAM==========")
+        print("1.Show balance")
+        print("2.Deposit")
+        print("3.Withdraw")
+        print("4.Exit")
+        print("===================================")
 
-balance = 0 
-is_running = True
-while is_running:
-    print("==========BANKING PROGRAM==========")
-    print("1.Show balance")
-    print("2.Deposit")
-    print("3.Withdraw")
-    print("4.Exit")
-    print("===================================")
+        choice = input ("Enter your choice(1-4): ")
+        if choice == "1":
+            show_balance(balance)
+        elif choice == "2":
+            balance += deposit()
+        elif choice == "3":
+            balance -= withdraw(balance)
+        elif choice == "4":
+            is_running = False
+        else:
+            print("That is not a valid choice.")
 
-    choice = input ("Enter your choice(1-4): ")
-    if choice == "1":
-        show_balance()
-    elif choice == "2":
-        balance += deposit()
-    elif choice == "3":
-        balance -= withdraw()
-    elif choice == "4":
-        is_running = False
-    else:
-        print("That is not a valid choice.")
-
-print("Thank you! Have a nice day! ")
+    print("Thank you! Have a nice day! ")
+if __name__ =='__main__':
+    main()
