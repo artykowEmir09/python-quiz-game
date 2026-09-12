@@ -1,19 +1,18 @@
+"""
 # 🟢 Exercises — Easy → Hard
 # Exercise 1 — Name
-
 # Ask the user for their name and print:
-
 # Hello, John!
 name = input ("Enter your name: ")
 print (f"Hello, {name}")
-
+"""
 # Exercise 2 — Age
-
 # Ask the user for their age and print:
-
 # You are 24 years old.
-
 # Convert the input to an integer.
+
+age = int (input("Enter your age: "))
+print (f"You are {age} years old.")
 
 # Exercise 3 — Country
 
