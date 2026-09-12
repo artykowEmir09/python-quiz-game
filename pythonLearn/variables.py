@@ -80,19 +80,22 @@ print(f"Language: {favorite_language}")
 # Course:
 # Country:
 # ===========================
+
+
+name = "Emir"
+age = 24
+
+university= "UNITEN"
+
+course = "Software engineering"
+
+country = "Turkmenistan"
 print("===== STUDENT PROFILE =====")
-
-Name = "Emir"
-Age = 24
-University= "UNITEN"
-Course = "Software engineering"
-Country = "Turkmenistan"
-
-print (f"Name:       {Name}")
-print (f"Age:        {Age}")
-print (f"University: {University}")
-print (f"Course:     {Course}")
-print (f"Country:    {Country}")
+print (f"Name:       {name}")
+print (f"Age:        {age}")
+print (f"University: {university}")
+print (f"Course:     {course}")
+print (f"Country:    {country}")
 print("===========================")
 
 
@@ -119,7 +122,7 @@ print("===========================")
 
 # 24
 age = 23 
-age = 24 
+age +=1
 print (age)
 
 
@@ -138,9 +141,9 @@ print (age)
 
 length = 10
 width = 5
-Area = length * width
+area = length * width
 
-print(Area)
+print(area)
 
 # 🟡 Exercise 6 — Salary
 
@@ -181,10 +184,9 @@ print(yearly_salary)
 laptop_price = 1250
 phone_price = 700
 headphones_price = 250
+total = laptop_price + phone_price + headphones_price
 
-Total = laptop_price + phone_price + headphones_price
-
-print(f"Total: {Total}")
+print(f"Total: {total}")
 
 
 
@@ -240,9 +242,9 @@ print (f"Age: {age}")
 print (f"Country: {country}")
 print (f"University: {university}")
 print (f"Course: {course}")
-print (f"Programming_language: {programming_language}")
-print (f"Lears_learning: {years_learning}")
-print (f"Github_username: {github_username}")
+print (f"Programming language: {programming_language}")
+print (f"Years learning: {years_learning}")
+print (f"Github username: {github_username}")
 
 
 
