@@ -35,7 +35,7 @@ sum = number1 + number2
 print (f"First  number:    {number1}")
 print (f"First number:     {number2}")
 print (f"Sum of 2 numbers: {sum}")
-"""
+
 
 # Exercise 5 — Rectangle
 
@@ -58,17 +58,18 @@ area = length * width
 print (f"Length: {length}")
 print (f"Width:  {width}")
 print (f"Area:   {area}")
-
+"""
 # Exercise 6 — Age in 5 Years
-
 # Ask the user's current age.
-
 # Print their age 5 years from now.
-
 # Example:
-
 # Current age: 24
 # Age in 5 years: 29
+age = int (input("Enter your current age: "))
+print (f"Current age: {age}")
+print (f"Age in 5 years: {age + 5}")
+
+
 # Exercise 7 — Shopping Total
 
 # Ask the user for:
