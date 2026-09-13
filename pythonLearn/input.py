@@ -5,7 +5,7 @@
 # Hello, John!
 name = input ("Enter your name: ")
 print (f"Hello, {name}")
-"""
+
 # Exercise 2 — Age
 # Ask the user for their age and print:
 # You are 24 years old.
@@ -19,15 +19,24 @@ print (f"You are {age} years old.")
 # Ask for the user's country and print:
 
 # You live in Malaysia.
+
+country = input ( "Where do you live ? ")
+print(f"You live in {country}")
+
 # Exercise 4 — Two Numbers
-
 # Ask the user for two numbers and print their sum.
-
 # Example:
-
 # Enter first number: 10
 # Enter second number: 5
 # Sum: 15
+number1 = int(input("Enter first number: "))
+number2 = int(input("Enter second number: "))
+sum = number1 + number2
+print (f"First  number:    {number1}")
+print (f"First number:     {number2}")
+print (f"Sum of 2 numbers: {sum}")
+"""
+
 # Exercise 5 — Rectangle
 
 # Ask the user for:
@@ -42,6 +51,14 @@ print (f"You are {age} years old.")
 # Length: 10
 # Width: 5
 # Area: 50
+
+length = int(input("Enter length: "))
+width = int(input("Enter width: "))
+area = length * width
+print (f"Length: {length}")
+print (f"Width:  {width}")
+print (f"Area:   {area}")
+
 # Exercise 6 — Age in 5 Years
 
 # Ask the user's current age.
