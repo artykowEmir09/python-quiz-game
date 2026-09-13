@@ -68,7 +68,7 @@ print (f"Area:   {area}")
 age = int (input("Enter your current age: "))
 print (f"Current age:    {age}")
 print (f"Age in 5 years: {age + 5}")
-"""
+
 
 # Exercise 7 — Shopping Total
 # Ask the user for:
@@ -84,7 +84,7 @@ total = product_price * quantity
 print(f"Product price: {product_price}")
 print(f"Quantity:      {quantity}")
 print(f"Total:         {total}")
-
+"""
 
 
 # Exercise 8 — Average
@@ -104,6 +104,18 @@ print(f"Total:         {total}")
 # English: 70
 
 # Average: 80.0
+math = float(input("What is your exam marks for math: "))
+programming = float(input("What is your exam marks for programming: "))
+english = float(input("What is your exam marks for english: "))
+average = (math + programming + english)/3
+print(F"Math:        {math   }")
+print(F"Programming: {programming   }")
+print(F"English:     {english   }")
+print(F"Average:     {average   }")
+
+
+
+
 # Exercise 9 — Personal Profile
 
 # Ask the user for:
