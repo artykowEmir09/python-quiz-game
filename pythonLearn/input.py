@@ -58,7 +58,7 @@ area = length * width
 print (f"Length: {length}")
 print (f"Width:  {width}")
 print (f"Area:   {area}")
-"""
+
 # Exercise 6 — Age in 5 Years
 # Ask the user's current age.
 # Print their age 5 years from now.
@@ -66,22 +66,26 @@ print (f"Area:   {area}")
 # Current age: 24
 # Age in 5 years: 29
 age = int (input("Enter your current age: "))
-print (f"Current age: {age}")
+print (f"Current age:    {age}")
 print (f"Age in 5 years: {age + 5}")
-
+"""
 
 # Exercise 7 — Shopping Total
-
 # Ask the user for:
-
 # product price
 # quantity
-
 # Calculate:
-
 # Total = price × quantity
-
 # Use float() for the price and int() for quantity.
+
+product_price = float(input( "Enter the product price: "))
+quantity = int (input ("Enter the quantity: "))
+total = product_price * quantity
+print(f"Product price: {product_price}")
+print(f"Quantity:      {quantity}")
+print(f"Total:         {total}")
+
+
 
 # Exercise 8 — Average
 
