@@ -112,7 +112,7 @@ print(F"Math:        {math   }")
 print(F"Programming: {programming   }")
 print(F"English:     {english   }")
 print(F"Average:     {average   }")
-"""
+
 
 
 
@@ -149,6 +149,7 @@ print (f"Country: {country}")
 print (f"University: {university}")
 print (f"Course: {course}")
 print("=============================")
+"""
 # 🔴 Exercise 10 — Challenge: Receipt
 
 # Ask the user for:
@@ -181,3 +182,21 @@ print("=============================")
 # Subtotal: 6000
 # Discount: 900.0
 # # Final Price: 5100.0
+
+product_name = input("Enter product name: ")
+price = float(input("Enter the price: "))
+quantity = int(input("Enter quantity"))
+discount = float(input("Enter your discount"))
+subTotal = quantity * price
+discount = subTotal * 0.1
+Final_Price = subTotal - discount
+
+print("========== RECEIPT ==========")
+print(f"Product:     {product_name}")
+print(f"Price:       {price}")
+print(f"Quantity:    {quantity}")
+print(f"Subtotal:    {subTotal}")
+print(f"Discount:    {discount}")
+print(f"Final Price: {Final_Price}")
+print("==============================")
+
