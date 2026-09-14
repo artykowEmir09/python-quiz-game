@@ -26,12 +26,12 @@ print(f"Total: {total}")
 # Distance: 450
 # Fuel: 30
 # Fuel efficiency: 15.0 km/L
-
-distance = float(input("Distance Traveled: (km)"))
-fuel = float (input("How many liter did it take? (l)"))
+"""
+distance = float(input("Distance Traveled:  "))
+fuel = float (input("How many liter did it take?  "))
 km_per_liter = distance / fuel
 print (f"Fuel efficeincy: {km_per_liter} km/L")
-
+"""
 
 
 
@@ -45,13 +45,24 @@ print (f"Fuel efficeincy: {km_per_liter} km/L")
 # yearly bonus
 # total yearly income
 # Example:
-
 # Monthly salary: 3000
 # Monthly bonus: 500
-
 # Yearly salary: 36000
 # Yearly bonus: 6000
 # Total yearly income: 42000
+
+monthly_salary = int(input("Enter your monthly salary: "))
+monthly_bonus = int(input("Enter your monthly bonus: "))
+yearly_salary = monthly_salary * 12
+yearly_bonus = monthly_bonus * 12
+total_income = yearly_bonus + yearly_salary
+print(f"Monthly salary:      {monthly_salary}")
+print(f"Monthly bonus:       {monthly_bonus}")
+print(f"Yearly salary:       {yearly_salary}")
+print(f"Yearly bonus:        {yearly_bonus}")
+print(f"Total yearly income: {total_income}")
+
+
 # Exercise 4 — Temperature Conversion 🟡
 
 # Ask the user for a temperature in Celsius.

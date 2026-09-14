@@ -102,10 +102,12 @@ print(type ( y ))
 
 q = "10"
 w = "5"
-q = int(q)
-w = int (w)
-e = q + w
-print (e)
+q_int = int(q)
+w_int = int(w)
+
+result = q_int + w_int
+print(result)
+ 
 
 
 # 🟡 Exercise 6 — Calculate Price
@@ -126,7 +128,7 @@ print (e)
 price = "25.50"
 quantity = "4"
 price = float(price) 
-quantity = float(quantity)
+quantity = int(quantity)
 total = price * quantity
 print(f"Total: {total}")
 

@@ -4,7 +4,7 @@
 # Ask the user for their name and print:
 # Hello, John!
 name = input ("Enter your name: ")
-print (f"Hello, {name}")
+print (f"Hello, {name}!")
 
 # Exercise 2 — Age
 # Ask the user for their age and print:
@@ -33,7 +33,7 @@ number1 = int(input("Enter first number: "))
 number2 = int(input("Enter second number: "))
 sum = number1 + number2
 print (f"First  number:    {number1}")
-print (f"First number:     {number2}")
+print (f"Second number:     {number2}")
 print (f"Sum of 2 numbers: {sum}")
 
 
@@ -185,18 +185,18 @@ print("=============================")
 
 product_name = input("Enter product name: ")
 price = float(input("Enter the price: "))
-quantity = int(input("Enter quantity"))
-discount = float(input("Enter your discount"))
-subTotal = quantity * price
-discount = subTotal * 0.1
-Final_Price = subTotal - discount
+quantity = int(input("Enter quantity: "))
+discount = float(input("Enter your discount: "))
+sub_total = quantity * price
+discount_amount = sub_total * discount
+final_price = sub_total - discount_amount
 
 print("========== RECEIPT ==========")
 print(f"Product:     {product_name}")
 print(f"Price:       {price}")
 print(f"Quantity:    {quantity}")
-print(f"Subtotal:    {subTotal}")
-print(f"Discount:    {discount}")
-print(f"Final Price: {Final_Price}")
+print(f"Subtotal:    {sub_total}")
+print(f"Discount:    {discount_amount}")
+print(f"Final Price: {final_price}")
 print("==============================")
 
