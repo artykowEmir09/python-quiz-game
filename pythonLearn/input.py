@@ -84,7 +84,7 @@ total = product_price * quantity
 print(f"Product price: {product_price}")
 print(f"Quantity:      {quantity}")
 print(f"Total:         {total}")
-"""
+
 
 
 # Exercise 8 — Average
@@ -112,7 +112,7 @@ print(F"Math:        {math   }")
 print(F"Programming: {programming   }")
 print(F"English:     {english   }")
 print(F"Average:     {average   }")
-
+"""
 
 
 
@@ -135,6 +135,20 @@ print(F"Average:     {average   }")
 # Country: Malaysia
 # University: ABC University
 # Course: Computer Science
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+country = input("Enter your country: ")
+university = input("Enter your university: ")
+course = input("Enter your course: ")
+
+print("========== PROFILE ==========")
+print (f"Name: {name}")
+print (f"Age: {age}")
+print (f"Country: {country}")
+print (f"University: {university}")
+print (f"Course: {course}")
+print("=============================")
 # 🔴 Exercise 10 — Challenge: Receipt
 
 # Ask the user for:
