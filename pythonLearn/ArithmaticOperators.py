@@ -8,44 +8,42 @@
 # Ticket price: 12.50
 # Number of tickets: 3
 # Total: 37.5
-
+"""
 ticket_price = float(input("Enter ticket prices: "))
 quantity = int(input("How many tickets do you want: "))
 total = ticket_price * quantity
 print(f"Ticket price: {ticket_price}")
 print(f"Quantity: {quantity}")
 print(f"Total: {total}")
-
+"""
 # Exercise 2 — Trip Distance 🟢
-
 # Ask for:
-
 # distance traveled in km
 # fuel used in liters
-
 # Calculate:
-
 # km per liter = distance / fuel
-
 # Example:
-
 # Distance: 450
 # Fuel: 30
-
 # Fuel efficiency: 15.0 km/L
+
+distance = float(input("Distance Traveled: (km)"))
+fuel = float (input("How many liter did it take? (l)"))
+km_per_liter = distance / fuel
+print (f"Fuel efficeincy: {km_per_liter} km/L")
+
+
+
+
+
 # Exercise 3 — Salary Calculator 🟡
-
 # Ask for:
-
 # monthly salary
 # monthly bonus
-
 # Calculate:
-
 # yearly salary without bonus
 # yearly bonus
 # total yearly income
-
 # Example:
 
 # Monthly salary: 3000
