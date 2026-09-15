@@ -97,27 +97,26 @@ print(f"Fahrenheit: {fahrenheit}")
 # Think carefully about converting 15 into 0.15.
 
 # Exercise 6 — BMI Calculator 🟠
-
 # Ask the user for:
-
 # weight in kg
 # height in meters
-
 # Calculate:
-
 # BMI = weight / (height × height)
-
 # Example:
-
 # Weight: 70
 # Height: 1.75
-
 # BMI: 22.857...
-
 # You don't need to round it yet.
 
-# Exercise 7 — Restaurant Bill 🟠
+print("====== BMI Calculator ======")
 
+weight = float(input("Enter your weight in kg: "))
+height = float(input("Enter your height in meters: "))
+
+bmi = weight / (height * height)
+
+print("Your BMI is:", bmi)
+# Exercise 7 — Restaurant Bill 🟠
 # A restaurant customer enters:
 
 # food cost
