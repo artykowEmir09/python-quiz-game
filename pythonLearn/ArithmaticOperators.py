@@ -70,34 +70,26 @@ print(f"Total yearly income: {total_income}")
 # Example:
 # Celsius: 25
 # Fahrenheit: 77.0
-
+"""
 celsius = float(input ("Enter temperature in  celsius: "))
 fahrenheit = (celsius * 9/5) + 32
 print(f"Celsius: {celsius}")
-print(f" Fahrenheit: {fahrenheit}")
-
+print(f"Fahrenheit: {fahrenheit}")
+"""
 # Exercise 5 — Shopping Discount 🟡
-
 # Ask for:
-
 # product price
 # quantity
 # discount percentage
-
 # Calculate:
-
 # subtotal
 # discount amount
 # final price
-
 # Twist: The user enters the discount as a normal percentage.
-
 # Example:
-
 # Price: 80
 # Quantity: 3
 # Discount: 15
-
 # Subtotal: 240
 # Discount amount: 36
 # Final price: 204
