@@ -50,7 +50,7 @@ print (f"Fuel efficeincy: {km_per_liter} km/L")
 # Yearly salary: 36000
 # Yearly bonus: 6000
 # Total yearly income: 42000
-
+"""
 monthly_salary = int(input("Enter your monthly salary: "))
 monthly_bonus = int(input("Enter your monthly bonus: "))
 yearly_salary = monthly_salary * 12
@@ -61,21 +61,21 @@ print(f"Monthly bonus:       {monthly_bonus}")
 print(f"Yearly salary:       {yearly_salary}")
 print(f"Yearly bonus:        {yearly_bonus}")
 print(f"Total yearly income: {total_income}")
-
+"""
 
 # Exercise 4 — Temperature Conversion 🟡
-
 # Ask the user for a temperature in Celsius.
-
 # Convert it to Fahrenheit using:
-
 # F = (C × 9/5) + 32
-
 # Example:
-
 # Celsius: 25
-
 # Fahrenheit: 77.0
+
+celsius = float(input ("Enter temperature in  celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print(f"Celsius: {celsius}")
+print(f" Fahrenheit: {fahrenheit}")
+
 # Exercise 5 — Shopping Discount 🟡
 
 # Ask for:
