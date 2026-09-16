@@ -132,19 +132,6 @@ print(f"Fahrenheit: {fahrenheit}")
 # Tip: 10
 
 # Your program should calculate everything.
-print("====== Restaurant Bill Calculator ======")
-
-food_cost = float(input("Enter food cost: "))
-people = int(input("Enter number of people: "))
-tax_percentage = float(input("Enter tax percentage: "))
-tip_percentage = float(input("Enter tip percentage: "))
-
-tax_amount = food_cost * (tax_percentage / 100)
-tip_amount = food_cost * (tip_percentage / 100)
-
-final_bill = food_cost + tax_amount + tip_amount
-each_person_pays = final_bill / people
-
 
 # Exercise 8 — Currency Breakdown 🔴
 
