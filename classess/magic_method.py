@@ -11,12 +11,20 @@ class Book:
         return self.num_pages < other.num_pages
     def __gt__(self, other):
         return self.num_pages > other.num_pages
+    def __add__(self, other):
+        return f"{self.num_pages + other.num_pages} pages"
+    def __contains__(self,keyword):
+        return keyword in self.title or keyword in self.author
+    
 
 
 
 book1 = Book("No More Mr. Nice Guy", "Robert A. Glover", 223)
 book2 = Book("No More Mr. Nice Guy", "Robert A. Glover", 208)
 book3 = Book("How to Win Friends and Influence People", " Dale Carnegie", 192)
+
 print(book2 == book1)
 print(book2 < book1)
 print(book2 > book1)
+print(book2 + book1)
+print("Win" in book3)
