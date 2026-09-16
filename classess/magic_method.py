@@ -15,7 +15,15 @@ class Book:
         return f"{self.num_pages + other.num_pages} pages"
     def __contains__(self,keyword):
         return keyword in self.title or keyword in self.author
-    
+    def __getitem__(self, key):
+        if key == "title":
+            return self.title 
+        elif key == "author":
+            return self.author
+        elif key == "pages":
+            return f"{self.num_pages} pages"
+        else:
+            return f"Key {key }not found "
 
 
 
@@ -28,3 +36,6 @@ print(book2 < book1)
 print(book2 > book1)
 print(book2 + book1)
 print("Win" in book3)
+print(book3["title"])
+print(book3["author"])
+print(book3["published year"])
