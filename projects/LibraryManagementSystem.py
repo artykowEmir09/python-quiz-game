@@ -221,3 +221,148 @@ def view_members(data):
                 print(" -", book_id)
 
         else:
+                        print("Borrowed books: None")
+
+
+# ==========================================
+# BORROW BOOK
+# ==========================================
+
+def borrow_book(data):
+
+    print("\n========== BORROW BOOK ==========")
+
+    book_id = input("Book ID: ").upper()
+    member_id = input("Member ID: ").upper()
+
+    if book_id not in data["books"]:
+        print("Book not found.")
+        return
+
+    if member_id not in data["members"]:
+        print("Member not found.")
+        return
+
+    book = data["books"][book_id]
+    member = data["members"][member_id]
+
+    if not book["available"]:
+        print("This book is already borrowed.")
+        return
+
+    book["available"] = False
+    book["borrowed_by"] = member_id
+    book["borrow_date"] = datetime.now().strftime(
+        "%Y-%m-%d %H:%M:%S"
+    )
+
+    member["borrowed_books"].append(book_id)
+
+    save_data(data)
+
+    print("\nBook borrowed successfully!")
+    print("Book:", book["title"])
+    print("Member:", member["name"])
+
+
+# ==========================================
+# RETURN BOOK
+# ==========================================
+
+def return_book(data):
+
+    print("\n========== RETURN BOOK ==========")
+
+    book_id = input("Book ID: ").upper()
+
+    if book_id not in data["books"]:
+        print("Book not found.")
+        return
+
+    book = data["books"][book_id]
+
+    if book["available"]:
+        print("This book is not currently borrowed.")
+        return
+
+    member_id = book["borrowed_by"]
+
+    book["available"] = True
+    book["borrowed_by"] = None
+    book["borrow_date"] = None
+
+    if member_id in data["members"]:
+
+        member = data["members"][member_id]
+
+        if book_id in member["borrowed_books"]:
+            member["borrowed_books"].remove(book_id)
+
+    save_data(data)
+
+    print("\nBook returned successfully!")
+
+
+# ==========================================
+# BORROWED BOOKS
+# ==========================================
+
+def borrowed_books(data):
+
+    print("\n========== BORROWED BOOKS ==========")
+
+    found = False
+
+    for book_id, book in data["books"].items():
+
+        if not book["available"]:
+
+            found = True
+
+            member_id = book["borrowed_by"]
+
+            member_name = "Unknown"
+
+            if member_id in data["members"]:
+                member_name = data["members"][member_id]["name"]
+
+            print("\n-----------------------------")
+            print("Book ID:", book_id)
+            print("Title:", book["title"])
+            print("Borrowed by:", member_name)
+            print("Borrow date:", book["borrow_date"])
+
+    if not found:
+        print("No books are currently borrowed.")
+
+
+# ==========================================
+# LIBRARY STATISTICS
+# ==========================================
+
+def statistics(data):
+
+    print("\n========== LIBRARY STATISTICS ==========")
+
+    total_books = len(data["books"])
+    total_members = len(data["members"])
+
+    available = 0
+    borrowed = 0
+
+    for book in data["books"].values():
+
+        if book["available"]:
+            available += 1
+        else:
+            borrowed += 1
+
+    print("Total books:", total_books)
+    print("Available books:", available)
+    print("Borrowed books:", borrowed)
+    print("Total members:", total_members)
+
+
+# ==========================================
+# MAIN MENU
+# ==========================================
