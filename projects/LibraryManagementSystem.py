@@ -72,6 +72,7 @@ def add_book(data):
     print("\nBook added successfully!")
     print("Book ID:", book_id)
 
+
 def view_books(data):
 
     print("\n========== ALL BOOKS ==========")
@@ -221,7 +222,7 @@ def view_members(data):
                 print(" -", book_id)
 
         else:
-                        print("Borrowed books: None")
+            print("Borrowed books: None")
 
 
 # ==========================================
@@ -366,3 +367,74 @@ def statistics(data):
 # ==========================================
 # MAIN MENU
 # ==========================================
+
+def main():
+
+    data = load_data()
+
+    while True:
+
+        print("\n")
+        print("========================================")
+        print("       LIBRARY MANAGEMENT SYSTEM")
+        print("========================================")
+        print("1. Add Book")
+        print("2. View All Books")
+        print("3. Search Book")
+        print("4. Delete Book")
+        print("5. Add Member")
+        print("6. View Members")
+        print("7. Borrow Book")
+        print("8. Return Book")
+        print("9. View Borrowed Books")
+        print("10. Library Statistics")
+        print("11. Exit")
+        print("========================================")
+
+        choice = input("Choose an option: ")
+
+        if choice == "1":
+            add_book(data)
+
+        elif choice == "2":
+            view_books(data)
+
+        elif choice == "3":
+            search_book(data)
+
+        elif choice == "4":
+            delete_book(data)
+
+        elif choice == "5":
+            add_member(data)
+
+        elif choice == "6":
+            view_members(data)
+
+        elif choice == "7":
+            borrow_book(data)
+
+        elif choice == "8":
+            return_book(data)
+
+        elif choice == "9":
+            borrowed_books(data)
+
+        elif choice == "10":
+            statistics(data)
+
+        elif choice == "11":
+
+            print("\nThank you for using the Library Management System!")
+            break
+
+        else:
+            print("Invalid option. Please choose 1-11.")
+
+
+# ==========================================
+# START PROGRAM
+# ==========================================
+
+if __name__ == "__main__":
+    main()
